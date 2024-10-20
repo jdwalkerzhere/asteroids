@@ -5,10 +5,9 @@ from circleshape import CircleShape
 
 
 class Player(CircleShape):
-    def __init__(self, x, y, radius, containers):
+    def __init__(self, x, y, radius):
         super().__init__(x, y, radius)
         self.rotation = 0
-        self.containers = containers
 
     def triangle(self):
         forward = pygame.Vector2(0, 1).rotate(self.rotation)
